@@ -25,7 +25,8 @@ body {
 
 .container ul {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .container ul li {
