@@ -1,23 +1,13 @@
-const form = document.querySelector('form');
+$(document).ready(function () { //código que depende de jQuery precisa estar dentro dessa função
+    $('.container button').click(function(e) {
+        e.preventDefault();
+        const novaListaDeTarefa = $('#nova-lista-tarefas').val();
+        const novoItemDeTarefa = $(`<li> ${novaListaDeTarefa} </li>`); //criando uma lista
+        $(novoItemDeTarefa).appendTo('ul'); //aplicando uma lista dentro de um 'ul'
+        $('#nova-lista-tarefas').val(''); //limpando campo de escrita
+    })
 
-form.addEventListener('submit', function (e) {
-    let formValido = false;
-    e.preventDefault();
-    
-    let campoA = document.getElementById('campoa');
-    let campoB = document.getElementById('campob');
-    let validacao = document.getElementById('validacao');
-
-    formValido = (campoB.value > campoA.value);
-    if (formValido) {
-        validacao.textContent = "Sucesso";
-        validacao.style.color = "green";
-
-        document.getElementById('validacao').innerHTML = 'Sucesso';
-        return true;
-    } else {
-        validacao.textContent = "O número do campo B deve ser maior que o número do campo A.";
-        validacao.style.color = "red";
-        return false;
-    }
+    const clickLi = $('ul').on('click', 'li', function () {
+        $(this).toggleClass('completado'); //toggleClass é uma função usada para adicionar uma classe ou remover
+    })
 })
