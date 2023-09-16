@@ -23,6 +23,10 @@ body {
     font-size: 1.5em;
 }
 
+.container button {
+    cursor: pointer;
+}
+
 .container ul {
     display: flex;
     align-items: center;
