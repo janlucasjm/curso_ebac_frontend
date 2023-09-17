@@ -3,18 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tarefas</title>
+    <title>Formulário de Cadastro</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <form class="container">
-        <h1>Lista de tarefas</h1>
-        <input type="text" id="nova-lista-tarefas" required placeholder="Nome da tarefa">
-        <button type="submit">Cadastrar</button>
-        <ul></ul>
-    </form>
+    <section>
+        <h1>Formulário de Cadastro</h1>
+        <p>Preencha o formulário abaixo:</p>
+
+        <form>
+            <div>
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" required>
+            </div>
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" required placeholder="(12) 34567-8901">
+            </div>
+
+            <div>
+                <label for="cpf">CPF:</label>
+                <input type="tel" id="cpf" required>
+            </div>
+
+            <div>
+                <label for="endereco-completo">Endereço Completo:</label>
+                <input type="text" id="endereco-completo" required>
+            </div>
+
+            <div>
+                <label for="cep">CEP:</label>
+                <input type="tel" id="cep" required>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="main.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

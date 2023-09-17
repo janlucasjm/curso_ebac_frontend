@@ -1,43 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Variaveis globais */
+
+:root {
+    --fundo: rgb(70, 142, 236);
+    --fundo-formulario: white;
+    --fundo-botao: #E6BF55;
+}
+
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
+
+
 body {
-    background-color: #E7e7e7;
+    background-color: var(--fundo);
 }
 
-.container {
-    margin: 15vw auto;
-    width: 100%;
+section {
+    background-color: var(--fundo-formulario);
+    width: 40vw;
+    margin: 6vw auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.384);
+}
+
+section h1 {
     text-align: center;
-}
-
-.container h1 {
     padding-bottom: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
 }
 
-.container input, button {
-    padding: 10px;
-    font-size: 1.5em;
+section p, 
+section form div {
+    padding-bottom: 15px;
 }
 
-.container button {
+section form div label {
+    display: block;
+}
+
+section form div input {
+    width: 18vw;
+    padding: 5px;
+}
+
+section form button {
+    background-color: var(--fundo-botao);
+    padding: 6px 10px;
+    width: 100px;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
+    color: black;
+    font-weight: bold;
 }
 
-.container ul {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.container ul li {
-    margin: 20px 0;
-    cursor: pointer;
-}
-
-.completado {
-    text-decoration: line-through;
+section form {
+    margin-left: 20px;
 }
