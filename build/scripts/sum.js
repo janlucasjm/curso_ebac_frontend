@@ -1,1 +1,0 @@
-function soma(n,o){return n+o}
