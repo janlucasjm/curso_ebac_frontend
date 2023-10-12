@@ -1,0 +1,10 @@
+body {
+  color: blue;
+  background-color: black;
+}
+.container {
+  max-width: 1024px;
+}
+.container h1 {
+  color: black;
+}
