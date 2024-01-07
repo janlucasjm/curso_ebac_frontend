@@ -33,6 +33,11 @@ div h2 {
     cursor: pointer;
 }
 
+.button:disabled {
+    background-color: #ccc;
+    border-color: #ccc;
+}
+
 .tableContainer {
     margin-top: 4em;
     display: flex;
