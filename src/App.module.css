@@ -1,0 +1,57 @@
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+div h2 {
+    text-align: center;
+    margin-top: 15vh;
+    font-size: 4em;
+    color: var(--corPrincipal);
+}
+
+.calcValues, .result {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.calcValues div {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    padding: 4px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--corPrincipal);
+    background-color: var(--corPrincipal);
+    color:white;
+    cursor: pointer;
+}
+
+.tableContainer {
+    margin-top: 4em;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0,0,0, 0.2);
+    color: var(--corSecundaria);
+    width: 180px;
+}
+
+thead th{
+    color: var(--corPrincipal);
+}
