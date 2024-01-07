@@ -55,3 +55,7 @@ td, th {
 thead th{
     color: var(--corPrincipal);
 }
+
+.active {
+    background-color: rgb(220, 255, 220);
+}
